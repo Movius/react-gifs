@@ -21,7 +21,7 @@ Build para producción
 npm run build
 ```
 
-Notas sobre variables de entorno
+Sobre variables de entorno
 - La aplicación usa `import.meta.env.VITE_GIPHY_KEY` para la clave de Giphy. Vite sustituye esa variable en tiempo de build, por lo que en GitHub Actions debes crear un Secret llamado `VITE_GIPHY_KEY` y pasarlo en el workflow (ya incluido en `.github/workflows/deploy.yml`).
 
 Eslint / configuración base
