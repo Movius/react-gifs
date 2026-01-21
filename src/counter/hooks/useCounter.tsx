@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export const useCounter = (num: number) => {
+export const useCounter = (num: number = 10) => {
     const [counter, setCounter] = useState(num);
 
     const handleAdd = () => {

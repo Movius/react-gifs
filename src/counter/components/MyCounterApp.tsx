@@ -2,7 +2,7 @@ import { useCounter } from "../hooks/useCounter"
 
 export const MyCounterApp = () => {
 
-    const { counter, handleAdd, handleSubtract, handleReset } = useCounter(4);
+    const { counter, handleAdd, handleSubtract, handleReset } = useCounter();
 
     return (
         <div style={{ display: "flex", flexDirection: 'column', alignContent: 'center' }}>
@@ -10,7 +10,7 @@ export const MyCounterApp = () => {
             <div style={{ display: "flex", alignContent: 'center', gap: '10px', margin: '0 auto' }}>
                 <button onClick={handleAdd}>+1</button>
                 <button onClick={handleSubtract}>-1</button>
-                <button onClick={handleReset}>reset 4</button>
+                <button onClick={handleReset}>Reset</button>
             </div>
         </div>
     )
